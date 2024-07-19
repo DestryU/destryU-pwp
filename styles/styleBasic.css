@@ -1,0 +1,9 @@
+.box {
+    width: 600px
+}
+.indent {
+    padding-left: 1.2em;
+}
+.setInline {
+    display: inline-block;
+}
