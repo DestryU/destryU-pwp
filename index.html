@@ -1,16 +1,24 @@
 <!doctype html>
 <html lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
+
+
   <body class="dark-paper bg-fixed">
 
     <section class="flex justify-center h-[85vh] light-paper">
         <h1 class="self-center text-8xl font-bold text-neutral-800">Hello</h1>
     </section>
 
+
+    <section>
+      <h2 id="whoSection" onclick="whoTransition()" class="text-neutral-300 font-bold text-3xl">Who?</h2>
+    </section>
 
     <section class="flex justify-center gap-[25rem] h-[85vh] dark-paper">
       <div class="flex flex-col w-[24rem] self-center">
@@ -115,5 +123,6 @@
     </section>
 
     <script type="module" src="/src/main.js"></script>
+    <script src="./src/events.js"></script>
   </body>
 </html>
