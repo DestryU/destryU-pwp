@@ -28,89 +28,93 @@
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 4500ms;
+    animation-delay: 250ms;
 }
 
 .fade-1 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 4750ms;
+    animation-delay: 500ms;
 }
 
 .fade-2 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 5000ms;
+    animation-delay: 750ms;
 }
 
 .fade-3 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 5250ms;
+    animation-delay: 1000ms;
 }
 
 .fade-4 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 5500ms;
+    animation-delay: 1250ms;
 }
 
 .fade-5 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 5750ms;
+    animation-delay: 1500ms;
 }
 
 .fade-6 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 6000ms;
+    animation-delay: 1750ms;
 }
 
 .fade-7 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 6250ms;
+    animation-delay: 2000ms;
 }
 
 .fade-8 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 6500ms;
+    animation-delay: 2250ms;
 }
 
 .fade-9 {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-duration: 2s;
-    animation-delay: 6750ms;
+    animation-delay: 2500ms;
 }
 
+.fade-title {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 500ms;
+}
 
+.fade-example {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 1s;
+    animation-delay: 1250ms
+}
 
-
-
-    /*animation-duration: 3s;*/
-    /*animation-direction: alternate;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-*/
-
+.fade-out {
+    animation: fade-in linear forwards;
+    animation-direction: reverse;
+    animation-duration: 500ms;
+}
 
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-
-
-/*.test-image {*/
-/*    background-image: url("https://placehold.co/600x400")*/
-/*}*/
