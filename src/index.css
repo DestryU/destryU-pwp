@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fade-fast {
+    animation: fade-in linear;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.light-paper {
+    background-color: transparent;
+    background-image: url("../assets/light-paper.png");
+    background-size: 100% 100%;
+}
+
+.dark-paper {
+    background-color: lime;
+    background-image: url("../assets/dark-paper.png");
+    background-attachment: fixed;
+}
+
+/*******************************************/
+
+.fade-0 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 4500ms;
+}
+
+.fade-1 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 4750ms;
+}
+
+.fade-2 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 5000ms;
+}
+
+.fade-3 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 5250ms;
+}
+
+.fade-4 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 5500ms;
+}
+
+.fade-5 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 5750ms;
+}
+
+.fade-6 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 6000ms;
+}
+
+.fade-7 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 6250ms;
+}
+
+.fade-8 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 6500ms;
+}
+
+.fade-9 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 2s;
+    animation-delay: 6750ms;
+}
+
+
+
+
+
+    /*animation-duration: 3s;*/
+    /*animation-direction: alternate;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-*/
+
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+/*.test-image {*/
+/*    background-image: url("https://placehold.co/600x400")*/
+/*}*/
