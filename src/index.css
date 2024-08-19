@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.fade-fast {
-    animation: fade-in linear;
-    animation-duration: 3s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.light-heading {
+    background-color: transparent;
+    background-image: url("../assets/lightPaperHeading.png");
+    background-size: 100% 100%;
 }
 
 .light-paper {
     background-color: transparent;
-    background-image: url("../assets/light-paper.png");
+    background-image: url("../assets/lightPaperFinal.png");
     background-size: 100% 100%;
 }
 
 .dark-paper {
-    background-color: lime;
     background-image: url("../assets/dark-paper.png");
     background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 /*******************************************/
@@ -94,23 +92,18 @@
     animation-delay: 2500ms;
 }
 
-.fade-title {
+.fade-10 {
     opacity: 0;
     animation: fade-in linear forwards;
-    animation-duration: 500ms;
+    animation-duration: 2s;
+    animation-delay: 2750ms;
 }
 
-.fade-example {
+.fade-11 {
     opacity: 0;
     animation: fade-in linear forwards;
-    animation-duration: 1s;
-    animation-delay: 1250ms
-}
-
-.fade-out {
-    animation: fade-in linear forwards;
-    animation-direction: reverse;
-    animation-duration: 500ms;
+    animation-duration: 2s;
+    animation-delay: 3000ms;
 }
 
 @keyframes fade-in {
@@ -118,3 +111,4 @@
     to {opacity: 1;}
 }
 
+/*******************************************/
