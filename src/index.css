@@ -5,19 +5,19 @@
 .light-heading {
     background-color: transparent;
     background-image: url("../assets/lightPaperHeading.png");
-    background-size: 100% 100%;
+    background-size: 1920px 100%;
 }
 
 .light-paper {
     background-color: transparent;
     background-image: url("../assets/lightPaperFinal.png");
-    background-size: 100% 100%;
+    background-size: 1920px 100%;
 }
 
 .dark-paper {
     background-image: url("../assets/dark-paper.png");
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 1920px 100%;
 }
 
 /*******************************************/
@@ -106,9 +106,27 @@
     animation-delay: 3000ms;
 }
 
+.fade-out {
+    opacity: 100;
+    animation: fade-in linear forwards;
+    animation-direction: reverse;
+    animation-duration: 1s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
 /*******************************************/
+
+.rPadFix {
+    padding-right: inherit;
+}

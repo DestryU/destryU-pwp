@@ -8,37 +8,301 @@
     <title>Vite App</title>
   </head>
 
+  <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-  <body class="dark-paper bg-fixed">
+  <body class="bg-fixed dark-paper">
 
-    <section id="helloSection" class="flex justify-center items-center h-[90svh] light-heading">
-        <button class="text-8xl font-bold text-neutral-800" onclick="helloSection()">Hello</button>
+    <!--Hello Header-->
+    <header id="helloSection" class="flex justify-center items-center h-[100vh] light-heading opacity-0 fade-in">
+      <h1 class="font-bold text-8xl text-neutral-800">
+        Hello
+      </h1>
+    </header>
+
+  <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+
+    <!--Who Section-->
+    <section onmouseenter="whoTitle(); whoContent()" class="relative min-h-[100vh] max-h-fit flex justify-center items-center bg-transparent">
+
+
+      <!--Who Title-->
+      <h2 id="whoTitle" class="text-neutral-300 absolute text-8xl">
+        Who?
+      </h2>
+
+      <!--Section Content-->
+      <div id="whoContent" class="flex flex-col lg:flex-row opacity-0">
+
+
+        <!--Text Division-->
+        <div class="grid gap-5 grid-flow-row sm:grid-cols-1 sm:grid-rows-5 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2 p-8">
+          <h2 class="text-6xl font-extrabold text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            Who?
+          </h2>
+
+          <p class="p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-2xl font-semibold text-neutral-300 text-center m-auto">
+            Hello, my name is<br><em>Destry</em>.
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            I like books and music,<br>games of the board and video variety,<br>and I like cartoons and toys.
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            In an almost child-like way,<br>I love to play, explore, and take things apart.
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            But more important than what I like<br>is what I do...<br>...and what I do is <em>interactive design</em>.
+          </p>
+        </div>
+
+
+        <!--Image Division-->
+        <img src="../assets/Profile2.png" alt="placeholder" class="self-center rounded-full min-h-[12rem] max-h-[25em] p-8">
+
+      </div>
     </section>
 
+  <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-    <section id="whoSection" class="flex flex-col md:flex-row justify-center items-center min-h-[80svh] max-h-fit dark-paper p-12">
-        <button class="font-bold text-8xl px-16 text-neutral-300" onclick="whoSection()">Who?</button>
+    <!--What Section-->
+    <section onclick="whatTitle(); whatContent()" class="relative my-4 min-h-[100vh] max-h-fit flex justify-center items-center light-paper">
+
+
+      <!--What Title-->
+      <button id="whatTitle" class="text-neutral-800 absolute text-8xl z-[9999]">
+        What?
+
+        <p class="text-base mt-4">'What?' is an interactive button.<br>Try clicking it!</p>
+
+      </button>
+
+
+      <!--Section Content-->
+      <div id="whatContent" class="flex flex-col lg:flex-row-reverse opacity-0">
+
+
+        <!--Text Division-->
+        <div class="grid gap-5 sm:grid-cols-1 sm:grid-rows-5 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 p-8">
+          <h2 class="text-6xl font-extrabold text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            What?
+          </h2>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            The obvious question is:<br>'What is Interactive Design?'
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            That's a good question...<br>... and kind of hard to answer.
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            If design is what happens when we reach out to the world around us, then...
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            I guess you could say...<br><em>"My job is making sure that the world reaches out to touch us in </em>meaningful<em> and </em>engaging<em> ways."</em>
+          </p>
+        </div>
+
+
+        <!--Image Division-->
+<!--        <img src="https://placehold.co/600x400" alt="placeholder" class="self-center rounded-full min-h-[12rem] max-h-[25em] p-8">-->
+
+
+
+      </div>
     </section>
 
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-    <section id="whatSection" class="flex flex-col md:flex-row-reverse justify-center items-center min-h-[80svh] max-h-fit light-paper p-12">
-        <button class="font-bold text-8xl px-16 text-neutral-800" onclick="whatSection()">What?</button>
+    <!--Where Section-->
+    <section onmouseenter="whereTitle(); whereContent()" class="relative min-h-[100vh] max-h-fit flex justify-center items-center bg-transparent">
+
+
+      <!--Where Title-->
+      <h2 id="whereTitle" class="text-neutral-300 absolute text-8xl">
+        Where?
+      </h2>
+
+
+      <!--Section Content-->
+      <div id="whereContent" class="flex flex-col opacity-0">
+
+
+        <!--Text Division-->
+        <div class="grid gap-5 sm:grid-cols-1 sm:grid-rows-5 md:grid-cols-1 md:grid-rows-3 lg:grid-cols-1 lg:grid-rows-2 p-8">
+
+          <h2 class="text-6xl font-extrabold text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            Where?
+          </h2>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            Everywhere!<br>And everything!
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            If it was made <em>by</em> people,<br>and it was made <em>for</em> people,<br>then someone must have designed it!
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            BUT!
+          </p>
+
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            Not every design is good,<br>and not everyone is good at design.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 mx-auto">
+          <div class="flex flex-col w-[18rem] bg-neutral-800 rounded-2xl p-4">
+            <img class="rounded-lg" src="./assets/ballpoint-photo.jpeg" alt="">
+            <p class="text-sm text-justify text-neutral-300 mt-4">The ballpoint pen was a machining marvel for its time. The liquid pressure from the ink pushes the ball against the cylinder of the pen, ensuring ink only leaks out of the pen when pressed against something. This was on top of the fact that it carried around its own ink source and rolled smoothly across surfaces, something that nib pens were notoriously bad at. </p>
+          </div>
+
+          <div class="flex flex-col w-[18rem] bg-neutral-800 rounded-2xl p-4">
+            <img class="rounded-lg" src="./assets/cooling-tower.jpg" alt="">
+            <p class="text-sm  text-justify text-neutral-300 mt-4">The Three Mile Island incident was a partial nuclear meltdown in 1979. The initial report stated that the meltdown was caused by a "[...] misdiagnosis of the problem." Later studies revealed the operators took every precaution they could and then some, but bad design of the control panels and backup systems made it nearly impossible to identify that a meltdown was imminent.</p>
+          </div>
+
+          <div class="flex flex-col w-[18rem] bg-neutral-800 rounded-2xl p-4">
+            <img class="rounded-lg" src="./assets/fedex-logo.png" alt="">
+            <p class="text-sm  text-justify text-neutral-300 mt-4">The FedEx logo is a somewhat famous example of great design. Aside from being clear and easy to read, the most impressive feature is the large arrow 'hidden' in the logo. If you look at the negative whitespace between the capital 'E' and the lowercase 'x', you'll see an arrow pointing to the right - the perfect symbol for a service based on speed and movement.</p>
+          </div>
+
+          <div class="flex flex-col w-[18rem] bg-neutral-800 rounded-2xl p-4">
+            <img class="rounded-lg" src="./assets/red-turn-arrow.jpg" alt="">
+            <p class="text-sm  text-justify text-neutral-300 mt-4">This is a common traffic signal in the US: the red turn arrow. In the West, red is often associated with danger, warning, and prevention. The arrow, on the other hand, is a symbol of movement, direction, and allowance. Combining them in this was creates something called an 'Interference Effect', causing dangerous traffic situations where people either go or stop when they should have done the opposite.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-    <section id="whereSection" class="flex flex-col md:flex-row justify-center items-center min-h-[80svh] max-h-fit bg-transparent p-12">
-        <button class="font-bold text-8xl px-16 text-neutral-300" onclick="whereSection()">Where?</button>
+    <!--Why Section-->
+    <section onmouseenter="whyTitle(); whyContent()" class="relative my-4 min-h-[100vh] max-h-fit flex justify-center items-center light-paper">
+      <!--Why Title-->
+      <h2 id="whyTitle" class="text-neutral-800 absolute text-8xl">
+        Why?
+      </h2>
+      <!--Section Content-->
+      <div id="whyContent" class="flex flex-col lg:flex-row-reverse opacity-0">
+
+        <!--Text Division-->
+        <div class="grid gap-5 sm:grid-cols-1 sm:grid-rows-5 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 p-8">
+          <h2 class="text-6xl font-extrabold text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            Why?
+          </h2>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            Because bad design <em>REALLY</em> sucks.
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            Think about the fiddly knobs,<br>the pull doors you try to push,<br>or the HaRd tO rEaD tExT you deal with.<br>Every. Single. Day.
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            It feels awful. But good design? Good design is invisible.<br>No matter what you do, I can assure you that you don't want to be remembered as the product that didn't work, or the website that felt awful to use.
+          </p>
+
+          <p class="text-2xl text-neutral-800 p-2 bg-neutral-300 rounded-2xl shadow-md shadow-neutral-400 text-center m-auto">
+            We all need good design. And I can help you with that.
+          </p>
+        </div>
+
+
+      </div>
     </section>
 
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-    <section id="whySection" class="flex flex-col md:flex-row-reverse justify-center items-center min-h-[80svh] max-h-fit light-paper p-12">
-        <button class="font-bold text-8xl px-16 text-neutral-800" onclick="whySection()">Why?</button>
+    <!--How Section-->
+    <section onmouseenter="howTitle(); howContent()" class="relative min-h-[90vh] max-h-fit flex justify-center items-start bg-transparent">
+
+
+      <!--Who Title-->
+      <h2 id="howTitle" class="text-neutral-300 absolute text-8xl">
+        How?
+      </h2>
+
+
+      <!--Section Content-->
+      <div id="howContent" class="container flex flex-col mx-auto opacity-0">
+
+
+        <!--Text Division-->
+        <div class="grid sm:grid-cols-1 sm:grid-rows-5 md:grid-cols-1 md:grid-rows-3 lg:grid-cols-1 lg:grid-rows-2 p-8">
+          <h2 class="text-6xl font-extrabold text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            How?
+          </h2>
+          <p class="text-2xl text-neutral-300 p-2 bg-neutral-800 rounded-2xl shadow-md shadow-neutral-900 text-center m-auto">
+            Lotsa ways. Click on any of the images below to see more.</p>
+        </div>
+
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+            </div>
+          </div>
+
+
+
+
+
+
+
+      </div>
     </section>
 
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
-    <section id="howSection" class="flex justify-center items-center h-[110svh] bg-transparent">
-      <button class="font-bold text-8xl px-16 text-neutral-300" onclick="howSection()">How?</button>
-    </section>
+
 
     <script type="module" src="/src/main.js"></script>
     <script src="./src/events.js"></script>

@@ -1,44 +1,73 @@
-function helloSection () {
+function fadeOut() {
+    const targetSection = document.getElementById('hellSection')
+
+    targetSection.classList.add('fade-out')
+}
+
+function fadeIn() {
     const targetSection = document.getElementById('helloSection')
-}
-
-function helloReset() {
-    const targetSection = document.getElementById('helloSection')
-
-    targetSection.value = `
-    <button class="text-5xl text-neutral-300 opacity-0 text-center pb-[5rem] fade-0" onClick="whoReset()">Who?</button>
-    `
+    targetSection.classList.add('fade-in')
 }
 
 
 
-function whoSection() {
-    const targetSection = document.getElementById('whoSection')
-
-    targetSection.innerHTML = `
-        <div class="flex flex-col min-w-[18rem] max-w-[30rem] p-8">
-            <button class="text-5xl text-neutral-300 opacity-0 text-center fade-0 pb-8" onclick="whoReset()">Who?</button>
-            <p class="text-neutral-300 text-center fade-1 pb-4">Hello, my name is Destry.</p>
-            <p class="text-neutral-300 text-center fade-2">I like books and music,</p>
-            <p class="text-neutral-300 text-center fade-3">I like games of both the board and video variety,</p>
-            <p class="text-neutral-300 text-center fade-4 pb-4">and I like cartoons and toys.</p>
-            <p class="text-neutral-300 text-center fade-5">In a lot of ways,</p>
-            <p class="text-neutral-300 text-center fade-6 pb-4">I\'m still a kid that believes in make-pretend.</p>
-            <p class="text-neutral-300 text-center fade-7 pb-4">But more important than what I like is what I can</p>
-            <p class="text-neutral-300 text-center fade-8 pb-4">DO</p>
-            <p class="text-neutral-300 text-center fade-9">... and what I do is <em>Interactive Design</em>.</p>
-        </div>
-        <img src="../assets/Profile2.png" alt="placeholder" class="self-center fade-10 rounded-full min-h-[12rem] max-h-[25em] p-8">
-    `
+function whoTitle() {
+    const targetSection = document.getElementById('whoTitle')
+    targetSection.classList.add('fade-out')
+}
+function whoContent() {
+    const targetSection = document.getElementById('whoContent')
+    targetSection.classList.add('fade-in')
 }
 
-function whoReset() {
 
-    const targetSection = document.getElementById('whoSection')
-    targetSection.innerHTML = `
-        <button class="self-center font-bold text-8xl px-16 text-neutral-300" onclick="whoSection()">Who?</button>
-    `
+
+function whatTitle() {
+    const targetSection = document.getElementById('whatTitle')
+    targetSection.classList.add('fade-out')
 }
+function whatContent() {
+    const targetSection = document.getElementById('whatContent')
+    targetSection.classList.add('fade-in')
+}
+
+
+
+function whereTitle() {
+    const targetSection = document.getElementById('whereTitle')
+    targetSection.classList.add('fade-out')
+}
+function whereContent() {
+    const targetSection = document.getElementById('whereContent')
+    targetSection.classList.add('fade-in')
+}
+
+
+
+function whyTitle() {
+    const targetSection = document.getElementById('whyTitle')
+    targetSection.classList.add('fade-out')
+}
+function whyContent() {
+    const targetSection = document.getElementById('whyContent')
+    targetSection.classList.add('fade-in')
+}
+
+
+
+function howTitle() {
+    const targetSection = document.getElementById('howTitle')
+    targetSection.classList.add('fade-out')
+}
+function howContent() {
+    const targetSection = document.getElementById('howContent')
+    targetSection.classList.add('fade-in')
+}
+
+
+
+
+
 
 
 
@@ -127,6 +156,17 @@ function whyReset() {
         <button class="self-center font-bold text-8xl px-16 text-neutral-800" onclick="whySection()">Why?</button>
     `
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
