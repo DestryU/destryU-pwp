@@ -20,14 +20,36 @@
     background-size: 1920px 100%;
 }
 
-/*******************************************/
-
-.fade-0 {
+.fade-in {
     opacity: 0;
     animation: fade-in linear forwards;
-    animation-duration: 2s;
-    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-delay: .5s;
 }
+
+.fade-out {
+    opacity: 100;
+    animation: fade-in linear forwards;
+    animation-direction: reverse;
+    animation-duration: 1s;
+}
+
+.fade-slow {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+.fade-slowest {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+/*******************************************/
+
 
 .fade-1 {
     opacity: 0;
@@ -106,20 +128,6 @@
     animation-delay: 3000ms;
 }
 
-.fade-out {
-    opacity: 100;
-    animation: fade-in linear forwards;
-    animation-direction: reverse;
-    animation-duration: 1s;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-duration: 1s;
-    animation-delay: .5s;
-}
-
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -130,3 +138,4 @@
 .rPadFix {
     padding-right: inherit;
 }
+
