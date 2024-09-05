@@ -22,7 +22,7 @@ function whoContent() {
 
 
 
-function whatTitle() {
+export function whatTitle() {
     const targetSection = document.getElementById('whatTitle')
     targetSection.classList.add('fade-out')
 }
