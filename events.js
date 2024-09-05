@@ -22,7 +22,7 @@ function whoContent() {
 
 
 
-export function whatTitle() {
+function whatTitle() {
     const targetSection = document.getElementById('whatTitle')
     targetSection.classList.add('fade-out')
 }
@@ -112,7 +112,7 @@ function whereSection() {
             <p class="text-neutral-300 text-center fade-5">... not everyone is good at design.</p>
         </div>
         <div class="flex flex-col justify-center items-center max-w-fit p-8">
-            <img src="../assets/Design.png" alt="placeholder" class="fade-6 p-8">
+            <img src="assets/Design.png" alt="placeholder" class="fade-6 p-8">
             <p class="text-neutral-300 text-justify max-w-[28rem] fade-7">"Good designs are hard, complex, and take a lot of time to get right. It should be no surprise that there's a lot of bad design in the world."</p>
             <p></p>
         </div>
