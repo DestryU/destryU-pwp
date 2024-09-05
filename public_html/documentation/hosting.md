@@ -214,7 +214,7 @@ jobs:
       - name: Deploy to server
         run: |
          ssh-keyscan -H destryu.com >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gkephart@destryu.com:/var/www/destryu.com/html
+         scp -r ./dist/* destryu@destryu.com:/var/www/destryu.com/html
 ```
 - Push your changes to github to trigger the action and test deploying your site
 
