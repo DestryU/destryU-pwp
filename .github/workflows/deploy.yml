@@ -1,4 +1,3 @@
-#  yaml
   name: Deploy via SSH
   'on':
     - push
@@ -26,4 +25,4 @@
         - name: Deploy to server
           run: |
             ssh-keyscan -H destryu.com >> ~/.ssh/known_hosts 
-            scp -r ./dist/* gkephart@destryu.com:/var/www/destryu.com/html
+            scp -r ./dist/* destryu@destryu.com:/var/www/destryu.com/html
