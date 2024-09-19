@@ -3,22 +3,22 @@ function fadeOut() {
 
     targetSection.classList.add('fade-out')
 }
+window.fadeOut = fadeOut
 
 function fadeIn() {
     const targetSection = document.getElementById('helloSection')
     targetSection.classList.add('fade-in')
 }
 
+window.fadeIn = fadeIn
 
 
-function whoTitle() {
-    const targetSection = document.getElementById('whoTitle')
-    targetSection.classList.add('fade-out')
-}
 function whoContent() {
     const targetSection = document.getElementById('whoContent')
     targetSection.classList.add('fade-in')
 }
+
+window.whoContent = whoContent;
 
 
 
@@ -26,21 +26,26 @@ function whatTitle() {
     const targetSection = document.getElementById('whatTitle')
     targetSection.classList.add('fade-out')
 }
+window.whatTitle = whatTitle;
+
 function whatContent() {
     const targetSection = document.getElementById('whatContent')
     targetSection.classList.add('fade-in')
 }
-
+window.whatContent = whatContent;
 
 
 function whereTitle() {
     const targetSection = document.getElementById('whereTitle')
     targetSection.classList.add('fade-out')
 }
+window.whereTitle = whereTitle;
+
 function whereContent() {
     const targetSection = document.getElementById('whereContent')
     targetSection.classList.add('fade-in')
 }
+window.whereContent = whereContent;
 
 
 
@@ -98,7 +103,6 @@ function whatReset() {
 }
 
 
-
 function whereSection() {
     const targetSection = document.getElementById('whereSection')
 
@@ -112,7 +116,7 @@ function whereSection() {
             <p class="text-neutral-300 text-center fade-5">... not everyone is good at design.</p>
         </div>
         <div class="flex flex-col justify-center items-center max-w-fit p-8">
-            <img src="Design.png" alt="placeholder" class="fade-6 p-8">
+            <img src="../assets/Design.png" alt="placeholder" class="fade-6 p-8">
             <p class="text-neutral-300 text-justify max-w-[28rem] fade-7">"Good designs are hard, complex, and take a lot of time to get right. It should be no surprise that there's a lot of bad design in the world."</p>
             <p></p>
         </div>
@@ -218,6 +222,7 @@ function sillyMessages() {
     ]
     return messages[i]
 }
+window.sillyMessages = sillyMessages
 
 
 
@@ -247,3 +252,4 @@ function sillyOffset() {
         <button onmouseenter="sillyOffset()" onclick="sillyOffset()" class="bg-neutral-800 text-neutral-300 max-w-fit h-fit p-3 rounded-2xl z-[9999] ${temp[i]}">${sillyMessages()}</button>
     `
 }
+window.sillyOffset = sillyOffset
